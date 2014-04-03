@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			* { box-sizing: border-box; }
+			html,body{height: 100%;}
+			section {
+				display: flex;
+				font-family: "Helvetica Neue";
+				font-weight: 300;
+				height: 100%;
+				width: 100%;
+				color: #555;
+			}
+			
+			section > div {
+				max-width: 500px;
+				height: 230px;
+				background: #ffa;
+				padding: 20px;
+				border-radius: 5px;
+				border: 3px solid #555;
+				margin: auto;
+			}
+			
+			h2 {
+				font-weight: 300;
+				text-align: center;
+			}
+			
+			label {
+				clear: both;
+				padding-top: 20px;
+				height: 50px;
+				display: block;
+				font-size: 18px;
+				line-height: 1.4em;
+				width: 250px;
+				
+			}
+			input {
+				float: right;
+				margin-left: 10px;
+				border: 1px solid #aa9;
+				padding: 5px;
+				border-radius: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div>
+				<h2>Logg inn</h2>
+				<label>Brukernavn: <input></label>
+				<label>Passord: <input></label>
+			</div>
+		</section>
+	</body>
+</html>

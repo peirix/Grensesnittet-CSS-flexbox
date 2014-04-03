@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body { height: 100%; }
+			
+			section {
+				display: flex;
+				height: 100%;
+				font-family: "Helvetica Neue";
+				font-weight: 100;
+				color: #cc9;
+				font-size: 22px;
+			}
+			
+			div {
+				box-shadow: inset 0 0 90px 10px rgba(0,0,0,0.5);
+				padding: 50px;
+				background-color: #066;
+				background-size: cover;
+				background-position: center center;
+				flex: 2 0 0;
+				transition: flex .4s ease;
+				width: 0;
+				width: auto;
+				position: relative;
+			}
+			div:last-child,div:first-child {
+				cursor: pointer;
+				flex: 1 0 0;
+			}
+			section:hover div { flex: 1 0 0; }
+			section div:hover { flex: 2 0 0; }
+			div:first-child:hover,div:last-child:hover { flex: 3 0 0; }
+			
+			
+			h2,h1 {
+				text-align: center;
+				font-weight: 100;
+				font-size: 40px;
+			}
+			
+			.img1 { background-image: url('img/img1.jpg'); }
+			.img2 { background-image: url('img/img2.jpg'); }
+			
+			nav {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: flex;
+				flex-flow: column wrap;
+			}
+			
+			ul {
+				margin: auto;
+			}
+			
+			li {
+				list-style: none;
+				text-align: center;
+				text-transform: uppercase;
+				line-height: 1.4em;
+				cursor: pointer;
+				
+			}
+				li:hover { text-decoration: underline; }
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="img1">
+				<h2>Produkter</h2>
+			</div>
+			<div>
+				<h1>Velkommen</h1>
+				
+				<nav>
+					<ul>
+						<li>Meny</li>
+						<li>Og</li>
+						<li>Sånt</li>
+						<li>Kanskje?</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="img2">
+				<h2>Noe helt annet</h2>
+			</div>
+		</section>
+	</body>
+</html>

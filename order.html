@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			* { box-sizing: border-box; padding: 0; margin: 0; }
+			body {
+				background: #aaa;
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			section {
+				background: #aaf;
+				height: 300px;
+				margin-bottom: 20px;
+			}
+			ul {
+				display: flex;
+				flex-flow: row wrap;
+				list-style: none;
+				justify-content: space-between;
+				font-family: "Helvetica Neue";
+				font-weight: 200;
+				letter-spacing: 1px;
+			}
+			li { height: 40px;}
+			a {
+				background: #99a;
+				padding: 5px 15px;
+				border-radius: 3px;
+				cursor: pointer;
+				min-width: 13px;
+				text-align: center;
+				box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+			}
+			a:first-child,a:last-child {
+				width: auto;
+			}
+			
+			@media screen and (max-width: 500px) {
+				li:first-child,li:last-child { width: 50%; }
+				li:first-child {
+					order: -2;
+				}
+				li:last-child {
+					order: -1;
+					text-align: right;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<section></section>
+		<footer>
+			<nav>
+				<ul>
+					<li><a>Prev</a></li>
+					<li><a>1</a></li>
+					<li><a>2</a></li>
+					<li><a>3</a></li>
+					<li><a>4</a></li>
+					<li><a>5</a></li>
+					<li><a>6</a></li>
+					<li><a>7</a></li>
+					<li><a>8</a></li>
+					<li><a>Next</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
